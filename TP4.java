@@ -15,7 +15,7 @@ public class TP4 {
 
 	public static int[] recurSort(int[] array, int begin, int end) {
 		if (begin >= end) {
-			int[] newArray = {array[begin]};
+			int[] newArray = { array[begin] };
 			return newArray;
 		} else {
 			int diff = (end - begin) / 2;
@@ -47,8 +47,26 @@ public class TP4 {
 					fusion(array1, Arrays.copyOfRange(array2, 1, array2.length)).length);
 			return newArray;
 		}
-	}	
-	
+	}
+
+	public static int[] newfusion(int[] array1, int[] array2) {
+		int[] bigArray = new int[array1.length + array2.length];
+		int i1 = 0, i2 = 0, i = 0;
+		while (i1 < array1.length && i2 < array2.length){
+			if (i1 >= array1.length){
+				bigArray[i++] = array2[i2++];				
+			} else if (i2 >= array2.length){
+				bigArray[i++] = array2[i2++];
+			} else {
+				if (){
+					
+				} else {
+					
+				}
+			}
+		}
+	}
+
 	public static void printIntArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i] + " ");
